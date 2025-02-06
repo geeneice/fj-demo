@@ -1,0 +1,47 @@
+.scroll-button {
+  background: none; /* No background */
+  color: white; /* White text */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.scroll-button:hover {
+  color: #4caf50; /* Green text on hover */
+}
+
+.scroll-button:focus {
+  outline: none;
+}
+
+.arrow {
+  margin-left: 10px;
+  display: inline-block;
+  animation: bounce 5s infinite; /* Apply bounce animation */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  25% {
+    transform: translateY(-5px); /* Move up */
+  }
+  50% {
+    transform: translateY(0); /* Back to original position */
+  }
+  75% {
+    transform: translateY(-5px); /* Move up again */
+  }
+  100% {
+    transform: translateY(0); /* Back to original position */
+  }
+}
