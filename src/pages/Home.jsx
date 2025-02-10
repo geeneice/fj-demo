@@ -14,7 +14,7 @@ import Goals from "../components/Goal";
 const Home = () => {
   return (
     <>
-      <div className="relative w-full lg:h-screen max-sm:h-[72vh]">
+      <div className="relative w-full h-screen">
         <Header />
         <img
           src="/farmjunction.jpg"
@@ -23,13 +23,13 @@ const Home = () => {
         />
 
         <div className="flex flex-col items-center justify-center h-full text-center text-white relative">
-          <h2 className="md:text-3xl max-sm:text-[20px] max-sm:mb-56 font-semibold md:mb-64 text-[#123524]">
+          <h2 className="md:text-3xl max-sm:text-[20px] max-sm:mb-96 font-semibold md:mb-64 text-[#123524]">
             From Farmers to Your Table, Fresh and <br /> Natural—Bringing You
             the Best
             <br />
             of the Harvest, Straight from the Source
           </h2>
-          <span className="bg-[#4caf50] w-[136px] h-[4px] absolute top-56 md:top-72"></span>
+          <span className="bg-[#4caf50] w-[136px] h-[4px] absolute top-56 md:top-72 max-sm:top-76"></span>
           <p className="text-[40px] dancing-script">What We Offer</p>
 
           {/* Product Boxes */}
@@ -38,7 +38,7 @@ const Home = () => {
         <ScrollDownButton />
       </div>
 
-      <div className="md:flex md:absolute md:top-[84%] max-sm:mt-4 sm:mt-4 justify-center w-full gap-6 text-[#EFE3C2]">
+      <div className="md:flex md:absolute md:top-[84%] max-sm:mt-4 sm:mt-4 justify-center w-full gap-6 text-[#EFE3C2] max-sm:px-5">
         <div className="product-box bg-[#123524] p-8 w-60 h-80 flex flex-col items-center">
           <h3 className="text-center text-xl font-semibold mb-4">Fruits</h3>
           <img

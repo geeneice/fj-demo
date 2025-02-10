@@ -10,3 +10,22 @@ body {
 .dancing-script {
   font-family: "Dancing Script", serif;
 }
+
+// Add this to your global CSS
+const cssAnimation = `
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateX(var(--slide-offset));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fade-slide-in {
+    animation: fadeSlideIn 0.8s ease-out forwards;
+    --slide-offset: 0px;
+  }
+`;
